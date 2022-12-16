@@ -25,6 +25,9 @@
     border-radius: 1rem;
     outline: none;
 }
+.search input[type=submit]{
+    cursor: pointer;
+}
 p{
     font-size: 1.8rem;
     font-weight: 700;

@@ -30,23 +30,20 @@ function Search(props){
 
 
 
-            if(info.sys !== undefined){
-                if(info.weather !== undefined){
+            if(info.sys !== undefined && info.weather !== undefined){
+                const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${info.weather[0]["icon"]}.svg`;
 
-                    const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${info.weather[0]["icon"]}.svg`;
+                setCity(`
+                <div>
+                    <p>Temperature: ${info.temp}°C</p>
+                    <p>Country: ${info.country}</p>
+                    <p>City: ${info.name}</p>
+                    <p>Description: ${info.weather[0]['description']}</p>
+                    <img src="${icon}" />
 
-                    setCity(`
-                    <div>
-                        <p>Temperature: ${info.temp}°C</p>
-                        <p>Country: ${info.country}</p>
-                        <p>City: ${info.name}</p>
-                        <p>Description: ${info.weather[0]['description']}</p>
-                        <img src="${icon}" />
-    
-                    </div>
-    
-                    `);
-                }
+                </div>
+                `);
+                
             }else{setCity("")}
         })
     }
