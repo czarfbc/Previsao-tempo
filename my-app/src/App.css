@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root{
     font-size: 62.5%;
 }
@@ -23,4 +24,8 @@
     padding-left: 1.0rem;
     border-radius: 1rem;
     outline: none;
+}
+p{
+    font-size: 1.8rem;
+    font-weight: 700;
 }

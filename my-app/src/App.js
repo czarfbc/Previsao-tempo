@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Search placeholder='Digite a cidade...'/>
+      <Search placeholder='Enter the city...'/>
     </div>
   );
 }
