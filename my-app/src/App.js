@@ -4,7 +4,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Search placeholder='Enter the city...'/>
+      <Search 
+        placeholder='Insira a cidade...' 
+        title='Digite a cidade que você deseja saber a previsão.'
+        searchBtn='Pesquisar por cidade'
+      />
     </div>
   );
 }
